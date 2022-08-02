@@ -16,7 +16,7 @@ class MatchTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('match')->truncate();
+        // DB::table('match')->truncate();
 
         $match = [
             [
