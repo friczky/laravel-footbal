@@ -14,5 +14,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+
+        $this->call(
+            [
+                StadiumsTableSeederL::class,
+                ClubsTableSeeder::class,
+                PlayersTableSeeder::class,
+                MatchTableSeeder::class,
+                ManagersTableSeeder::class,
+            ]
+        );
     }
 }
