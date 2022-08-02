@@ -27,6 +27,6 @@ class StadiumsTableSeeder extends Seeder
             ]
         ];
 
-        Stadiums::insert('$stadiums');
+        Stadiums::insert($stadiums);
     }
 }

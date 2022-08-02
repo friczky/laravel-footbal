@@ -28,6 +28,6 @@ class ClubsTableSeeder extends Seeder
             ],
         ];
 
-        Clubs::insert('$clubs');
+        Clubs::insert($clubs);
     }
 }

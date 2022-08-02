@@ -24,10 +24,10 @@ class MatchTableSeeder extends Seeder
                 'rivals_id'     => 2,
                 'schedule'      => '2020-01-01',
                 'created_at'    => now(),
-                'updated_at'    => now(),
+                'updated_at'    => now()
             ]
         ];
 
-        Match::insert('$match');
+        Match::insert($match);
     }
 }

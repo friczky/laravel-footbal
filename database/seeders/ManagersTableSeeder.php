@@ -29,6 +29,6 @@ class ManagersTableSeeder extends Seeder
             ],
         ];
 
-        Managers::insert('$managers');
+        Managers::insert($managers);
     }
 }

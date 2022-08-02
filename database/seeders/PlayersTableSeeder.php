@@ -30,6 +30,6 @@ class PlayersTableSeeder extends Seeder
             ]
         ];
 
-        Players::insert('$players');
+        Players::insert($players);
     }
 }
