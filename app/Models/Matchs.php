@@ -21,4 +21,9 @@ class Matchs extends Model
     {
         return $this->belongsTo('App\Models\Clubs', 'clubs_id', 'id');
     }
+
+    public function rivals()
+    {
+        return $this->belongsTo('App\Models\Clubs', 'rivals_id', 'id');
+    }
 }

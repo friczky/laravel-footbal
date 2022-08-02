@@ -35,8 +35,13 @@ class Clubs extends Model
         return $this->hasMany('App\Models\Players', 'clubs_id');
     }
 
-    public function matchs()
+    public function matchs_clubs()
     {
-        return $this->hasMany('App\Models\Matchs', 'clubs_id');
+        return $this->hasOne('App\Models\Matchs', 'clubs_id');
+    }
+
+    public function matchs_rivals()
+    {
+        return $this->hasOne('App\Models\Matchs', 'rivals_id');
     }
 }
