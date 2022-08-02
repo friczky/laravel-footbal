@@ -7,5 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Stadiums extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+
+    protected $table = 'stadiums';
+
+    protected $fillable = [
+        'name',
+        'capacity',
+        'address',
+    ];
+
+    // relation with clubs
+    public function clubs()
+    {
+        return $this->hasOne('App\Models\Clubs', 'stadiums_id');
+    }
 }

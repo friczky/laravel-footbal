@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Players extends Model
+class Matchs extends Model
 {
     // use HasFactory;
 
-    protected $table = 'players';
+    protected $table = 'match';
 
     protected $fillable = [
         'clubs_id',
-        'name',
-        'height',
-        'position',
+        'rivals_id',
+        'schedule'
     ];
 
     public function clubs()
