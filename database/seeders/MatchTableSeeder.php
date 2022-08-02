@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\Match;
+use App\Models\Matchs;
 
 class MatchTableSeeder extends Seeder
 {
@@ -28,6 +28,6 @@ class MatchTableSeeder extends Seeder
             ]
         ];
 
-        Match::insert($match);
+        Matchs::insert($match);
     }
 }
