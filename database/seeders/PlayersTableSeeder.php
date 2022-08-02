@@ -21,7 +21,7 @@ class PlayersTableSeeder extends Seeder
         $players = [
             [
                 'clubs_id'  => '1',
-                'photo'     => '',
+                'photo'     => 'https://www.google.com/',
                 'name'      => 'Thomas',
                 'height'    => '180',
                 'position'  => 'Defender',

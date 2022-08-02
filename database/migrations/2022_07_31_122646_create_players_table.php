@@ -16,6 +16,7 @@ class CreatePlayersTable extends Migration
         Schema::create('players', function (Blueprint $table) {
             $table->id();
             $table->foreignId('clubs_id')->nullable()->index('clubs_id_fk2_idx');
+            $table->string('name');
             $table->longText('photo');
             $table->string('height');
             $table->string('position')->nullable();

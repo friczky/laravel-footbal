@@ -17,7 +17,7 @@ class CreateStadiumsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('capacity');
-            $table->integer('address')->nullable();
+            $table->longText('address')->nullable();
             $table->timestamps();
         });
     }

@@ -14,8 +14,8 @@ class AddForeignKeysToMatch extends Migration
     public function up()
     {
         Schema::table('match', function (Blueprint $table) {
-            $table->foreign('clubs_id', 'clubs_id_fk4')->references('id')->on('clubs')->onUpdate('CASADE')->onDelete('RESTRICT');
-            $table->foreign('rivals_id', 'rivals_id_fk5')->references('id')->on('clubs')->onUpdate('CASADE')->onDelete('RESTRICT');
+            $table->foreign('clubs_id', 'clubs_id_fk4')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
+            $table->foreign('rivals_id', 'rivals_id_fk5')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
         });
     }
 

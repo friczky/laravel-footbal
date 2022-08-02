@@ -24,6 +24,13 @@ class StadiumsTableSeeder extends Seeder
                 'address'   => 'Stamford Bridge, London',
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],
+            [
+                'name'      => 'Jakabaring',
+                'capacity'  => 4000,
+                'address'   => 'Palembang,Sumatera Selatan',
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
         ];
 
